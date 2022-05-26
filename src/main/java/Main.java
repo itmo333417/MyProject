@@ -1,7 +1,11 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Execute numbers = new Execute();
-        int s = numbers.exe(5);
-        System.out.println("Sum from 0 to 5 = " + s);
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        int num = in.nextInt();
+        int s = numbers.exe(num);
+        System.out.format("Sum from 0 to %s = " + s,num);
     }
 }
